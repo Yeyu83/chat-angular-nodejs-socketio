@@ -1,0 +1,16 @@
+<div style="margin: 4em;">
+    <h1>Mensajes</h1>
+    <hr>
+    <form style="display: flex;" [formGroup]="form">
+        <label>Message:</label><input formControlName="message" autofocus placeholder="Escribe un mensaje..." type="text">
+        <button (click)="send()">Send</button>
+    </form>
+    <ul id="messages-box">
+        <li *ngFor="let message of messages">
+            <div class="message">
+                <h2>{{ message.message }}</h2>
+                <small>{{ message.from }}</small>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,10 @@
+#messages-box {
+    height: 600px;
+    overflow-y: scroll;
+    background-color: #ffeeff;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
